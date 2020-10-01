@@ -1,0 +1,19 @@
+on:
+  reddit:
+    url: https://reddit.com/r/news
+    config:
+        limit: 20
+jobs:
+  print:
+    name: Print
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Outputs
+        env:
+          title: ${{on.reddit.outputs.title}}
+          contentSnippet: ${{on.reddit.outputs.contentSnippet}}
+          link: ${{on.reddit.outputs.link}}
+        run: |
+          echo title: $title
+          echo contentSnippet: $contentSnippet
+          echo link: $link
