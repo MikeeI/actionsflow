@@ -1,4 +1,4 @@
-name: Send a telegram message when new hot subreddit
+name: REDDIT
 on:
   reddit:
     url: https://reddit.com/r/news/new/
