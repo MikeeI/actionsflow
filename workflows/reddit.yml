@@ -1,7 +1,7 @@
 name: REDDIT
 on:
   reddit:
-    url: https://reddit.com/r/funny/new/
+    url: https://reddit.com/r/funny/.rss
 jobs:
   print:
     name: Print
